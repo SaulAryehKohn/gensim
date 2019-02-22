@@ -91,7 +91,7 @@ class LdaSeqModel(utils.SaveLoad):
             Controls the initialization of the DTM model. Supports three different modes:
                 * 'gensim': Uses gensim's LDA initialization.
                 * 'own': Uses your own initialization matrix of an LDA model that has been previously trained.
-                * 'lda_model': Use a previously used LDA model, passing it through the `lda_model` argument.
+                * 'ldamodel': Use a previously used LDA model, passing it through the `lda_model` argument.
         sstats : numpy.ndarray , optional
             Sufficient statistics used for initializing the model if `initialize == 'own'`. Corresponds to matrix
             beta in the linked paper for time slice 0, expected shape (`self.vocab_len`, `num_topics`).
